@@ -1,0 +1,65 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1
+{
+    padding: 10px
+}
+
+    header {
+    background-color: cornsilk;
+    display: flex;
+    justify-content: space-between; /* pushes items apart */
+    align-items: center;            /* vertically center */
+    padding: 10px 20px;
+}
+
+nav
+{
+    display: flex;
+}
+.card1, .card2, .card3 {
+    background-color: aliceblue;
+    padding: 100px;
+    margin: 75px;
+    border: 1px solid black;
+    border-radius: 20%;
+    /*box-shadow: 5px 5px 0 #fff, 10px 10px 0 rgba(0,0,0,0.2);*/
+    transition: all 0.3s ease; /* 👈 important */
+}
+
+.card1:hover,
+.card2:hover,
+.card3:hover {
+    transform: translateY(-8px); /* lifts card */
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3); /* stronger shadow */
+}
+
+
+.cards_wrapper
+{
+    display: flex;
+    justify-content: center;
+
+}
+a {
+    text-decoration: none;   /* removes underline */
+    color: inherit;          /* removes default blue color */
+}
+
+    .links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+.links a:hover {
+    background-color: darkgoldenrod;
+    color: white;
+}
+
